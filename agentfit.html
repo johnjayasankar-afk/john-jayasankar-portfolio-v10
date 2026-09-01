@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>AgentFit — Workflow Opportunity Mapper | John Jayasankar</title>
+  <meta name="description" content="AgentFit is John Jayasankar's interactive product prototype for deciding where AI agents belong, how autonomous they should be, and what controls the workflow needs." />
+  <meta name="author" content="John Jayasankar" />
+  <meta name="robots" content="index, follow" />
+  <meta property="og:title" content="AgentFit — Workflow Opportunity Mapper" />
+  <meta property="og:description" content="An interactive product prototype for sizing agent opportunities, autonomy, controls, and operating leverage." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://johnjayasankar.com/agentfit" />
+  <meta property="og:image" content="https://johnjayasankar.com/assets/og-john-jayasankar.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <link rel="canonical" href="https://johnjayasankar.com/agentfit" />
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml" />
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png" />
+  <link rel="stylesheet" href="studio.css?v=systems-instrument-final" />
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+</head>
+<body class="studio-site agentfit-page">
+  <div class="page-grain" aria-hidden="true"></div><div class="pointer-light" aria-hidden="true"></div><div class="page-progress" aria-hidden="true"><span></span></div>
+  <header class="site-header agentfit-header">
+    <div class="header-grid">
+      <a class="brand" href="/#home"><span class="brand-mark">JJ</span><span class="brand-copy"><strong>JOHN JAYASANKAR</strong><small>INDEPENDENT PRODUCT / 2026</small></span></a>
+      <nav class="agentfit-nav"><a href="/#work">PORTFOLIO</a><a href="/#build">HOW I BUILD</a><a href="/#contact">CONTACT</a></nav>
+      <div class="header-actions"><a class="resume-link" href="/#work">← BACK TO WORK</a></div>
+    </div>
+  </header>
+
+  <main class="agentfit-main">
+    <section class="agentfit-hero section-dark" data-chrome="dark">
+      <div class="shell agentfit-hero-grid">
+        <div class="reveal">
+          <div class="system-kicker"><span class="status-dot"></span><span>INTERACTIVE PROTOTYPE</span><i></i><span>JJ-BUILD-01</span></div>
+          <span class="project-type">AGENTFIT / WORKFLOW OPPORTUNITY MAPPER</span>
+          <h1>How autonomous<br>should this workflow be?</h1>
+          <p>Turn workflow characteristics into a product recommendation for agent fit, autonomy, control posture, architecture, and operating leverage.</p>
+          <div class="hero-note"><span>WORKFLOW FIRST</span><span>RISK / REVERSIBILITY</span><span>VALUE HYPOTHESIS</span></div>
+        </div>
+        <div class="agentfit-hero-art reveal" data-delay="60" data-material>
+          <div class="decision-globe material-surface"><i></i><i></i><i></i><strong>FIT</strong><small>AUTONOMY / CONTROL</small></div>
+          <div class="globe-axis ga-1"><span>RULE CLARITY</span></div><div class="globe-axis ga-2"><span>ACCESS</span></div><div class="globe-axis ga-3"><span>REVERSIBILITY</span></div>
+          <div class="globe-marker"><i></i><span>RECOMMENDATION</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="agentfit-workbench-section section-light" data-chrome="light">
+      <div class="shell agentfit-workbench-header reveal"><span class="section-index">01 / DEFINE THE WORK</span><h2>Make the inputs explicit.</h2><p>AgentFit is intentionally simple: it forces workflow structure, system access, reversibility, consequence, and economics into the conversation before choosing an autonomy level.</p></div>
+      <div class="shell agentfit-workbench-grid">
+        <section class="af-panel af-inputs reveal">
+          <div class="af-panel-head"><div><small>WORKFLOW MODEL</small><h3>Inputs</h3></div><button id="afp-reset" type="button">RESET</button></div>
+          <label class="af-name"><span>WORKFLOW NAME</span><input id="afp-name" type="text" value="Operations run setup" maxlength="60" autocomplete="off" /></label>
+          <div class="af-presets"><span>PRESETS</span><button type="button" data-preset="ops">OPS SETUP</button><button type="button" data-preset="support">SUPPORT TRIAGE</button><button type="button" data-preset="payments">PAYMENT EXCEPTION</button></div>
+          <div class="af-controls">
+            <label><span><b>Weekly volume</b><em id="afp-volume-label">150</em></span><small>How often does the workflow repeat?</small><input id="afp-volume" type="range" min="10" max="500" value="150" step="10" /></label>
+            <label><span><b>Minutes per case</b><em id="afp-minutes-label">30</em></span><small>How much human time does each run consume?</small><input id="afp-minutes" type="range" min="5" max="180" value="30" step="5" /></label>
+            <label><span><b>Rule clarity</b><em id="afp-rules-label">5 / 5</em></span><small>Can good decisions be described consistently?</small><input id="afp-rules" type="range" min="1" max="5" value="5" /></label>
+            <label><span><b>System / data access</b><em id="afp-access-label">4 / 5</em></span><small>Can the product retrieve the context it needs?</small><input id="afp-access" type="range" min="1" max="5" value="4" /></label>
+            <label><span><b>Action reversibility</b><em id="afp-reverse-label">4 / 5</em></span><small>Can a bad action be stopped or undone?</small><input id="afp-reverse" type="range" min="1" max="5" value="4" /></label>
+            <label><span><b>Failure consequence</b><em id="afp-risk-label">2 / 5</em></span><small>What happens if the system is wrong?</small><input id="afp-risk" type="range" min="1" max="5" value="2" /></label>
+          </div>
+        </section>
+
+        <section class="af-panel af-output reveal" data-delay="60" data-material>
+          <div class="af-panel-head"><div><small>PRODUCT DECISION</small><h3 id="afp-output-title">Operations run setup</h3></div><span class="af-state" id="afp-state">STRONG FIT</span></div>
+          <div class="af-decision-surface">
+            <div class="af-topology"><i></i><i></i><i></i><i></i><div class="af-point"><strong id="afp-score">82</strong><small>/100</small></div></div>
+            <div class="af-primary"><small>RECOMMENDED AUTONOMY</small><strong id="afp-autonomy">Supervised agent</strong><p id="afp-summary">Good structure and system access support an agent, while a human approval boundary preserves control.</p></div>
+          </div>
+          <div class="af-output-grid"><div><small>CAPACITY RETURNED</small><strong id="afp-hours">49 hrs / wk</strong><span id="afp-annual">≈ 2,548 hrs / yr</span></div><div><small>SYSTEM PATTERN</small><strong id="afp-pattern">APIs + typed actions</strong><span id="afp-pattern-sub">approval before consequential action</span></div><div><small>CONTROL POSTURE</small><strong id="afp-control">Human approval</strong><span id="afp-control-sub">logs · deterministic validation · rollback</span></div></div>
+          <div class="af-rationale"><span>WHY THIS RECOMMENDATION</span><ul id="afp-reasons"></ul></div>
+          <div class="autonomy-ladder"><div data-level="assist"><span>01</span><strong>Assist</strong><small>retrieve / summarize</small></div><div data-level="copilot"><span>02</span><strong>Copilot</strong><small>recommend actions</small></div><div data-level="supervised" class="active"><span>03</span><strong>Supervised</strong><small>act with approval</small></div><div data-level="bounded"><span>04</span><strong>Bounded</strong><small>act inside policy</small></div></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="agentfit-system section-dark" data-chrome="dark">
+      <div class="shell agentfit-system-grid">
+        <div class="reveal"><span class="section-index">02 / SYSTEM SHAPE</span><h2>Fit only matters if it changes how you build.</h2><p id="afp-architecture-copy">For this workflow, the recommendation is a supervised agent: retrieve live context, call bounded domain APIs, validate deterministic rules, then request approval before consequential action.</p></div>
+        <div class="af-architecture reveal" data-delay="60" data-material><div><small>CONTEXT</small><strong>Retrieval / MCP</strong><span>live state + policy</span></div><i></i><div><small>TOOLS</small><strong>Domain APIs</strong><span>narrow capabilities</span></div><i></i><div><small>ACTIONS</small><strong>Typed calls</strong><span>bounded parameters</span></div><i></i><div><small>CONTROL</small><strong id="afp-rail-control">Approval gate</strong><span>deterministic checks</span></div><i></i><div><small>EVALS</small><strong>Behavior + QA</strong><span>before autonomy expands</span></div></div>
+      </div>
+      <div class="shell agentfit-footer-actions"><div><span>PRODUCT NOTE</span><p>Independent, illustrative prototype. The output is a discovery hypothesis, not a production authorization.</p></div><div><button id="afp-copy" class="case-link" type="button">COPY RECOMMENDATION <span>↗</span></button><a class="case-link" href="/?case=agentfit">BUILD NOTES <span>↗</span></a><a class="case-link" href="mailto:johnjayasankar@gmail.com">CONTACT <span>↗</span></a></div></div>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="shell footer-grid"><div><strong>JOHN JAYASANKAR</strong><span>AGENTFIT / INDEPENDENT BUILD</span></div><div><span>JOHNJAYASANKAR.COM</span></div><div><a href="/#work">BACK TO PORTFOLIO ↗</a></div></div></footer>
+  <script defer src="/_vercel/insights/script.js"></script><script defer src="/_vercel/speed-insights/script.js"></script><script src="agentfit.js"></script><script src="studio.js?v=systems-instrument-final"></script>
+</body>
+</html>

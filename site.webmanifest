@@ -1,0 +1,9 @@
+{
+  "name": "John Jayasankar — Product, AI Agents & Fintech",
+  "short_name": "John Jayasankar",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#090c11",
+  "theme_color": "#090c11",
+  "icons": [{"src":"/assets/apple-touch-icon.png","sizes":"180x180","type":"image/png"}]
+}
